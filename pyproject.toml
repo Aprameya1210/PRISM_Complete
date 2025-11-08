@@ -1,0 +1,23 @@
+[project]
+name = "capacity-estimator"
+version = "0.1.0"
+description = "Bottle capacity estimation from a single image"
+requires-python = ">=3.10"
+dependencies = [
+  "opencv-contrib-python>=4.10.0.0",
+  "ultralytics>=8.3.0",
+  "numpy>=1.26",
+  "pydantic>=2.7",
+  "python-dotenv>=1.0.1",
+  "google-genai>=0.3.0",
+]
+
+[project.scripts]
+cap-estimate = "capacity_estimator.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}

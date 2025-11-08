@@ -1,0 +1,16 @@
+opencv-contrib-python>=4.10.0.0
+ultralytics>=8.3.0
+numpy>=1.26
+pydantic>=2.7
+python-dotenv>=1.0.1
+google-genai>=0.3.0
+fastapi[standard]
+starlette
+pydantic
+torch
+image
+numpy
+ultralytics
+uvicorn
+gunicorn
+opencv-python-headless
